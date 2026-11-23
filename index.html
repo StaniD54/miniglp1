@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mikrodawkowanie GLP-1 i dawka podtrzymująca: co wiadomo, a czego nie | miniglp1.pl</title>
+<meta name="description" content="Skończyły się leki GLP-1 i nie wiesz, co dalej? Leczenie pełnymi dawkami jest za drogie? Przegląd badań: odstawienie, mikrodawkowanie, rzadsze podawanie, dawka podtrzymująca. Co jest udowodnione, a co nie.">
+<link rel="canonical" href="https://miniglp1.pl/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mikrodawkowanie GLP-1 i dawka podtrzymująca: co wiadomo, a czego nie">
+<meta property="og:description" content="Przegląd badań o odstawieniu GLP-1, mikrodawkowaniu i rzadszym podawaniu. Informacja, nie zalecenie.">
+<meta property="og:url" content="https://miniglp1.pl/">
+<meta property="og:locale" content="pl_PL">
+<style>
+:root{
+  --ink:#16313a; --muted:#52666d; --bg:#f7f5ef; --card:#ffffff; --line:#d9dfdd;
+  --teal:#0f6b73; --teal-dark:#0a4d54; --teal-soft:#e2f0ef;
+  --amber:#b8651b; --amber-soft:#fbeedd;
+  --warn-bg:#fff6e5; --warn-line:#e7b966;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+a{color:var(--teal-dark)}
+h1,h2,h3{line-height:1.25;margin:0 0 .5em}
+h1{font-size:clamp(1.7rem,4.6vw,2.5rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.35rem,3.4vw,1.7rem);margin-top:0}
+h3{font-size:1.1rem}
+p{margin:0 0 1em}
+header.top{background:linear-gradient(180deg,#e8f2f0,var(--bg));padding:34px 0 8px}
+.kicker{display:inline-block;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-dark);background:var(--teal-soft);padding:4px 10px;border-radius:99px;margin-bottom:12px}
+.lede{font-size:1.1rem;color:var(--muted);max-width:720px}
+.split{display:grid;grid-template-columns:1fr;gap:16px;margin:26px 0 10px}
+@media(min-width:760px){.split{grid-template-columns:1fr 1fr;gap:20px}}
+.path{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(22,49,58,.05)}
+.path .art{background:var(--teal-soft)}
+.path.cost .art{background:var(--amber-soft)}
+.path svg,.path img{display:block;width:100%;height:auto}
+.path img{aspect-ratio:16/9;object-fit:cover}
+.path .body{padding:18px 20px 22px;display:flex;flex-direction:column;flex:1}
+.path h2{font-size:1.2rem;margin-bottom:.4em}
+.path p{color:var(--muted);margin-bottom:1em}
+.btn{margin-top:auto;align-self:flex-start;display:inline-block;background:var(--teal);color:#fff;text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600;font-size:.95rem}
+.btn:hover{background:var(--teal-dark)}
+.path.cost .btn{background:var(--amber)}
+.path.cost .btn:hover{background:#8f4d12}
+.bridge{text-align:center;color:var(--muted);margin:6px 0 0;font-size:.98rem}
+nav.toc{margin:18px 0 6px;font-size:.92rem;display:flex;flex-wrap:wrap;gap:8px 16px}
+nav.toc a{color:var(--teal-dark)}
+main section{padding:38px 0 6px;border-top:1px solid var(--line)}
+main section:first-of-type{border-top:0}
+.box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:10px;padding:16px 20px;margin:0 0 1.2em}
+.box ul{margin:.4em 0 0;padding-left:1.2em}
+.box li{margin-bottom:.35em}
+.warn{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:10px;padding:14px 18px;margin:0 0 1.2em}
+.tablewrap{overflow-x:auto;margin:0 0 1.2em;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{background:var(--teal-soft);font-weight:600}
+tr:last-child td{border-bottom:0}
+@media(max-width:640px){
+  .tablewrap{border:0;background:none;overflow:visible;border-radius:0}
+  table{min-width:0;display:block}
+  thead{display:none}
+  tbody,tr,td{display:block}
+  tr{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:12px;padding:6px 0}
+  td{border:0;padding:6px 14px}
+  td::before{content:attr(data-label);display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:1px}
+  td:first-child{font-size:1.02rem;padding-top:10px}
+}
+.tag{display:inline-block;font-size:.78rem;padding:2px 8px;border-radius:99px;background:var(--amber-soft);color:#7a420d;white-space:nowrap}
+.tag.good{background:#e0f1e4;color:#1d5b2e}
+.tag.low{background:#f6e3e1;color:#8a2c22}
+sup a{text-decoration:none;font-weight:600}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:0 0 10px;padding:0 16px}
+details[open]{padding-bottom:6px}
+summary{cursor:pointer;font-weight:600;padding:13px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--teal);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+.news article{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 12px}
+.news time{display:block;font-size:.85rem;color:var(--muted);margin-bottom:2px}
+.news h3{margin-bottom:.3em;font-size:1.02rem}
+.news p{margin:0;color:var(--muted);font-size:.96rem}
+ol.refs{padding-left:1.4em;font-size:.93rem}
+ol.refs li{margin-bottom:.6em}
+footer{margin-top:44px;background:#0f2e35;color:#d6e4e6;padding:30px 0 40px;font-size:.93rem}
+footer a{color:#a8d5d8}
+footer h2{color:#fff;font-size:1.05rem}
+.small{font-size:.9rem;color:var(--muted)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header class="top">
+<div class="wrap">
+  <span class="kicker">Informacja dla pacjentów · stan na 23.11.2026</span>
+  <h1>Mikrodawkowanie GLP-1 i dawka podtrzymująca: co wiadomo, a czego nie</h1>
+  <p class="lede">Dwie różne sytuacje prowadzą do tego samego pytania: czy da się utrzymać efekt leczenia mniejszą ilością leku? Poniżej zebrano, co na ten temat mówi piśmiennictwo medyczne, a gdzie dowodów po prostu brakuje.</p>
+
+  <div class="split">
+    <article class="path">
+      <div class="art">
+        <img src="skonczyly-sie.jpg" width="1200" height="658" loading="eager" decoding="async" alt="Zamyślona kobieta trzyma puste, otwarte opakowanie po leku GLP-1; na stole leży jedna ostatnia tabletka. W tle rozdroże i znak zapytania.">
+      </div>
+      <div class="body">
+        <h2>Skończyły mi się leki i nie wiem, co dalej</h2>
+        <p>Po zakończeniu leczenia masa ciała zwykle częściowo wraca. Sprawdź, ile i jak szybko, oraz co mówią badania o sposobach utrzymania efektu.</p>
+        <a class="btn" href="#po-odstawieniu">Co dzieje się po odstawieniu</a>
+      </div>
+    </article>
+
+    <article class="path cost">
+      <div class="art">
+        <img src="drogo.jpg" width="1200" height="676" loading="eager" decoding="async" alt="Kobieta z prawie pustym portfelem stoi na rozdrożu: jedna droga prowadzi do standardowej dawki leku, druga do małej dawki (mikrodawki). Na stole leży wstrzykiwacz GLP-1.">
+      </div>
+      <div class="body">
+        <h2>Leczenie pełnymi dawkami jest dla mnie za drogie</h2>
+        <p>W sieci krążą pomysły na oszczędzanie: mikrodawki, rzadsze zastrzyki, dzielenie pena. Zobacz, co mówią badania i gdzie kończy się bezpieczeństwo.</p>
+        <a class="btn" href="#oszczedzanie">Co z oszczędzaniem</a>
+      </div>
+    </article>
+  </div>
+  <p class="bridge">Obie drogi spotykają się w tym samym miejscu. Dalej omawiamy temat wspólnie. ↓</p>
+  <nav class="toc" aria-label="Spis treści">
+    <a href="#wspolnie">Krótko</a>
+    <a href="#pojecia">Pojęcia</a>
+    <a href="#po-odstawieniu">Po odstawieniu</a>
+    <a href="#mniejsze-dawki">Mniejsze dawki</a>
+    <a href="#nie-wiadomo">Czego nie wiadomo</a>
+    <a href="#oszczedzanie">Oszczędzanie</a>
+    <a href="#lekarz">Rozmowa z lekarzem</a>
+    <a href="#pytania">Pytania</a>
+    <a href="#nowosci">Nowości</a>
+    <a href="#zrodla">Źródła</a>
+  </nav>
+</div>
+</header>
+
+<main class="wrap">
+
+<section id="wspolnie">
+  <h2>Krótko: jedno pytanie, dwie sytuacje</h2>
+  <p>Osoba, której skończył się lek, i osoba, którą przerasta jego cena, pytają o to samo: <strong>czy mniej leku może wystarczyć, żeby utrzymać osiągniętą masę ciała?</strong></p>
+  <div class="box">
+    <strong>Co mówią dane na dziś</strong>
+    <ul>
+      <li>Po całkowitym odstawieniu semaglutydu lub tyrzepatydu masa ciała zwykle <strong>wraca w dużym stopniu</strong>. Po semaglutydzie wróciło w ciągu roku około dwóch trzecich utraconej masy,<sup><a href="#ref-1">[1]</a></sup> a po przejściu z tyrzepatydu na placebo masa wzrosła o 14% w ciągu 52 tygodni.<sup><a href="#ref-2">[2]</a></sup></li>
+      <li>Strategie „pośrednie” (mniejsza dawka, rzadsze podawanie, stopniowe zmniejszanie) są opisane głównie w <strong>małych seriach przypadków i opiniach ekspertów</strong>. Nie ma badań z randomizacją, które pokazywałyby, jaki schemat jest bezpieczny i skuteczny.<sup><a href="#ref-5">[5]</a><a href="#ref-6">[6]</a><a href="#ref-7">[7]</a></sup></li>
+      <li>„Mikrodawkowanie” (dawki mniejsze niż najmniejsza zatwierdzona) według przeglądu z 2026 r. opiera się głównie na doniesieniach anegdotycznych i nie jest wspierane przez producentów, towarzystwa naukowe ani wytyczne.<sup><a href="#ref-7">[7]</a></sup></li>
+      <li>Samodzielne zmiany dawki, dzielenie pena lub kupowanie tańszych preparatów z niepewnego źródła niosą realne ryzyko błędu i szkody.<sup><a href="#ref-8">[8]</a></sup></li>
+    </ul>
+  </div>
+  <p>Ta strona jest informacją, nie zaleceniem. O dawce i schemacie zawsze decyduje lekarz prowadzący.</p>
+</section>
+
+<section id="pojecia">
+  <h2>Trzy pojęcia, które łatwo pomylić</h2>
+  <p>W rozmowach pacjentów „mikrodawki” oznaczają różne rzeczy. Warto je rozróżnić, bo każda ma inną podstawę naukową.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Pojęcie</th><th>Co to znaczy</th><th>Dane</th></tr></thead>
+    <tbody>
+      <tr>
+        <td data-label="Pojęcie"><strong>Mikrodawka</strong> (dawka frakcyjna)</td>
+        <td data-label="Co to znaczy">Dawka mniejsza niż najmniejsza zatwierdzona, odmierzana zwykle „na kliknięcia” wstrzykiwacza.</td>
+        <td data-label="Dane"><span class="tag low">głównie anegdoty</span> brak badań klinicznych, metoda niezatwierdzona<sup><a href="#ref-7">[7]</a></sup></td>
+      </tr>
+      <tr>
+        <td data-label="Pojęcie"><strong>Rzadsze podawanie</strong></td>
+        <td data-label="Co to znaczy">Ta sama dawka, ale rzadziej niż raz w tygodniu, np. co dwa tygodnie. Pacjenci pytają też o odstępy 10 lub 14 dni.</td>
+        <td data-label="Dane"><span class="tag">mała seria przypadków</span> 30 osób, bez grupy kontrolnej<sup><a href="#ref-6">[6]</a></sup></td>
+      </tr>
+      <tr>
+        <td data-label="Pojęcie"><strong>Dawka podtrzymująca / stopniowe zmniejszanie</strong></td>
+        <td data-label="Co to znaczy">Po osiągnięciu celu lekarz planowo ustala niższą dawkę lub wolniej kończy leczenie.</td>
+        <td data-label="Dane"><span class="tag">dowody ograniczone</span> przegląd z 2026 r. ocenia dane o tapering jako skąpe<sup><a href="#ref-5">[5]</a></sup></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="small">Osobne pojęcie to dawkowanie dzielone: mniejsze dawki podawane częściej niż raz w tygodniu. Ono również jest opisane jako praktyka pozarejestracyjna, bez potwierdzenia w badaniach.<sup><a href="#ref-7">[7]</a></sup></p>
+</section>
+
+<section id="po-odstawieniu">
+  <h2>Co dzieje się po odstawieniu leku</h2>
+  <p>Najlepsze dane pochodzą z badań, w których część osób po okresie leczenia przestawała przyjmować lek.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Badanie</th><th>Kto</th><th>Wynik</th></tr></thead>
+    <tbody>
+      <tr>
+        <td data-label="Badanie">Przedłużenie badania STEP 1, semaglutyd 2,4 mg<sup><a href="#ref-1">[1]</a></sup></td>
+        <td data-label="Kto">327 osób, otyłość bez cukrzycy; po 68 tyg. średnia utrata masy 17,3%</td>
+        <td data-label="Wynik">W ciągu roku po odstawieniu wróciło 11,6 punktu procentowego, czyli około dwóch trzecich utraconej masy. Poprawa wskaźników sercowo-metabolicznych w większości cofnęła się.</td>
+      </tr>
+      <tr>
+        <td data-label="Badanie">SURMOUNT-4, tyrzepatyd<sup><a href="#ref-2">[2]</a></sup></td>
+        <td data-label="Kto">670 osób po 36 tyg. leczenia (średnia utrata masy 20,9%), losowo: kontynuacja lub placebo na 52 tyg.</td>
+        <td data-label="Wynik">Kontynuacja: dalsza zmiana masy −5,5%. Placebo: +14,0%. Co najmniej 80% utraconej masy utrzymało 89,5% osób kontynuujących wobec 16,6% po odstawieniu.</td>
+      </tr>
+      <tr>
+        <td data-label="Badanie">Metaanaliza 18 badań RCT<sup><a href="#ref-3">[3]</a></sup></td>
+        <td data-label="Kto">3771 osób</td>
+        <td data-label="Wynik">U osób z otyłością średni przyrost masy po odstawieniu wyniósł 5,63 kg (duża rozbieżność między badaniami). Większy po semaglutydzie niż po liraglutydzie.</td>
+      </tr>
+      <tr>
+        <td data-label="Badanie">Metaregresja trajektorii nawrotu<sup><a href="#ref-4">[4]</a></sup></td>
+        <td data-label="Kto">6 badań RCT, 3236 osób w modelu</td>
+        <td data-label="Wynik">Po roku wracało średnio około 60% utraconej masy. Model przewiduje plateau na poziomie około 75% (przedział 69–82%), czyli nie pełny powrót do wagi wyjściowej.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Co z tego wynika.</strong> Otyłość jest chorobą przewlekłą, a odstawienie leku zwykle oznacza częściowy lub znaczny nawrót. Autorzy przeglądu z 2026 r. wskazują, że zakończenie leczenia należy <strong>planować jako część opieki nad chorobą przewlekłą</strong>, z monitorowaniem i wspólną decyzją z lekarzem, a nie traktować jako przewidywalnego, krótkiego kursu.<sup><a href="#ref-5">[5]</a></sup></p>
+  <p>Przegląd ten zwraca też uwagę, że dla sposobów łagodzenia nawrotu dowody są skąpe. Jedno badanie z randomizacją, dotyczące liraglutydu, wskazało na korzyść nadzorowanych ćwiczeń fizycznych. Dla diety, stopniowego zmniejszania dawki i innych zmian leczenia danych jest za mało, by formułować zalecenia.<sup><a href="#ref-5">[5]</a></sup></p>
+</section>
+
+<section id="mniejsze-dawki">
+  <h2>Co wiadomo o mniejszych dawkach i rzadszym podawaniu</h2>
+  <p>Dostępne dane to w praktyce pojedyncze, małe prace opisowe.</p>
+  <ul>
+    <li><strong>Rzadsze podawanie po osiągnięciu plateau.</strong> Retrospektywna seria 30 dorosłych, którzy osiągnęli stabilną masę na cotygodniowym semaglutydzie lub tyrzepatydzie. Przeszli na podawanie rzadsze, zwykle co drugi tydzień, przy tej samej dawce, średnio na 36 tygodni. Masa zmieniła się z 74,1 kg do 72,4 kg, a mięśnie utrzymały się. Autorzy uznają to za obiecujące, ale to mała, retrospektywna seria z jednego ośrodka, bez grupy kontrolnej i z udziałem osób wcześniej dobrze odpowiadających na leczenie.<sup><a href="#ref-6">[6]</a></sup></li>
+    <li><strong>Niższe dawki podtrzymujące niż zatwierdzone.</strong> W przeglądzie dokumentacji 40 osób (dane z 6 miesięcy dla 25 z nich) dawka podtrzymująca semaglutydu 1 mg i 2 mg dała podobny spadek masy (około 13%). To obserwacja z bardzo małej grupy, a nie badanie mikrodawek.<sup><a href="#ref-10">[10]</a></sup></li>
+    <li><strong>Mikrodawkowanie.</strong> Przegląd narracyjny z 2026 r. opisuje rosnące zainteresowanie mikrodawkami w związku z kosztami i niedoborami leków, a przegląd krytyczny z tego samego roku podkreśla, że dowody są głównie anegdotyczne i że praktyka wymaga badań farmakokinetycznych i klinicznych.<sup><a href="#ref-7">[7]</a><a href="#ref-9">[9]</a></sup></li>
+  </ul>
+  <p>Żadna z tych prac nie pozwala wskazać schematu, który można polecić ogółowi pacjentów.</p>
+</section>
+
+<section id="nie-wiadomo">
+  <h2>Czego nie wiadomo</h2>
+  <ul>
+    <li>Czy mikrodawki w ogóle działają i jak się to ma do skuteczności pełnych dawek. Nie ma badań z randomizacją.</li>
+    <li>Jaki odstęp między dawkami jest bezpieczny i skuteczny. Dla odstępów 10 lub 14 dni nie ma danych wprost, a opublikowano tylko małą serię dla podawania co dwa tygodnie.</li>
+    <li>Jak długo efekt utrzymuje się po zmniejszeniu dawki i u kogo.</li>
+    <li>Czy takie schematy chronią przed nawrotem w takim samym stopniu jak leczenie ciągłe, także pod względem serca, ciśnienia i glikemii.</li>
+    <li>Czy wyniki z jednego leku można przenosić na inne leki z tej grupy.</li>
+  </ul>
+  <p>Brak dowodów nie oznacza, że coś nie działa. Oznacza, że dziś nie da się tego uczciwie obiecać.</p>
+</section>
+
+<section id="oszczedzanie">
+  <h2>Gdy powodem jest cena: ryzyko fałszywych oszczędności</h2>
+  <p>Koszt i dolegliwości żołądkowo-jelitowe to dwie najczęstsze przyczyny, dla których pacjenci sięgają po mikrodawki.<sup><a href="#ref-8">[8]</a><a href="#ref-9">[9]</a></sup> Potrzeba jest zrozumiała. Ryzyko opisywane w piśmiennictwie to przede wszystkim:</p>
+  <div class="warn">
+    <ul style="margin:0;padding-left:1.2em">
+      <li><strong>Błędy dawkowania</strong> przy odmierzaniu „na kliknięcia” i przy przeliczaniu jednostek.</li>
+      <li><strong>Manipulowanie wstrzykiwaczem</strong> i dzielenie leku między osoby.</li>
+      <li><strong>Preparaty recepturowe i „research grade” z internetu</strong> o niepewnym składzie i jakości. Przytoczona praca dotyczy rynku amerykańskiego, ale mechanizm ryzyka jest ogólny.<sup><a href="#ref-8">[8]</a></sup></li>
+      <li><strong>Brak nadzoru</strong>: nikt nie ocenia masy, mięśni, ciśnienia ani objawów ubocznych.</li>
+    </ul>
+  </div>
+  <p>Jeśli koszt jest barierą, najbezpieczniejszą drogą jest rozmowa z lekarzem o planie leczenia: czy cel masy został osiągnięty, czy jest sens dalszego leczenia, jaką dawkę podtrzymującą można ustalić pod nadzorem i jakie są dostępne opakowania. Nie warto szukać oszczędności kosztem bezpieczeństwa.</p>
+</section>
+
+<section id="lekarz">
+  <h2>Co warto omówić z lekarzem</h2>
+  <ul>
+    <li>Czy cel leczenia został osiągnięty i jak długo masa jest stabilna.</li>
+    <li>Czy leczenie ma być kontynuowane, zmniejszane, czy kończone, i według jakiego planu.</li>
+    <li>Co robić, jeśli masa zacznie rosnąć: jakie progi uruchamiają kontrolę.</li>
+    <li>Jak chronić mięśnie i utrzymać aktywność fizyczną. To jedyny element, dla którego piśmiennictwo wskazuje na korzyść w okresie po leczeniu.<sup><a href="#ref-5">[5]</a></sup></li>
+    <li>Jakie są inne możliwości leczenia otyłości, jeśli leczenie farmakologiczne nie może być kontynuowane.</li>
+  </ul>
+</section>
+
+<section id="pytania">
+  <h2>Pytania, które zadają pacjenci</h2>
+
+  <details>
+    <summary>Czy po odstawieniu leku waga wróci?</summary>
+    <p>Zwykle tak, przynajmniej w części. W badaniach po odstawieniu semaglutydu wróciło około dwóch trzecich utraconej masy w ciągu roku, a po odstawieniu tyrzepatydu masa wzrosła średnio o 14% w ciągu 52 tygodni.<sup><a href="#ref-1">[1]</a><a href="#ref-2">[2]</a></sup> Wyniki bywają bardzo różne u poszczególnych osób.</p>
+  </details>
+
+  <details>
+    <summary>Czy mogę wstrzykiwać lek rzadziej, np. co 10 lub 14 dni?</summary>
+    <p>Nie ma badań z randomizacją, które by to potwierdzały. Opublikowano małą serię 30 osób, u których po osiągnięciu stabilnej masy lekarze przeszli zwykle na podawanie co drugi tydzień tej samej dawki.<sup><a href="#ref-6">[6]</a></sup> Zmiany schematu nie powinno się wprowadzać na własną rękę. To decyzja z lekarzem, który zna dawkę, masę ciała i choroby współistniejące.</p>
+  </details>
+
+  <details>
+    <summary>Czy mikrodawki działają tak samo jak pełne dawki?</summary>
+    <p>Nie wiadomo. Mikrodawką nazywa się dawkę mniejszą niż najmniejsza zatwierdzona. Przegląd z 2026 r. ocenia dowody jako głównie anegdotyczne i zaznacza, że praktykę należy zbadać w badaniach klinicznych.<sup><a href="#ref-7">[7]</a></sup></p>
+  </details>
+
+  <details>
+    <summary>Czy mogę odmierzać dawkę „na kliknięcia” i dzielić pena?</summary>
+    <p>To metoda niezatwierdzona.<sup><a href="#ref-7">[7]</a></sup> Piśmiennictwo wskazuje na ryzyko błędów dawkowania, manipulowania wstrzykiwaczem i dzielenia leku między osoby.<sup><a href="#ref-8">[8]</a></sup> Jeśli lekarz ustalił dla Ciebie konkretną dawkę, można ją przeliczyć na kliknięcia kalkulatorem na stronie <a href="https://tylekliknij.pl">tylekliknij.pl</a>. Dawkę zawsze ustala lekarz.</p>
+  </details>
+
+  <details>
+    <summary>Czy tańszy preparat recepturowy lub kupiony w internecie jest bezpieczny?</summary>
+    <p>Pracownicy opieki zdrowotnej ostrzegają przed preparatami „research grade” i niekontrolowanymi mieszankami, ponieważ skład i dawka mogą być niepewne.<sup><a href="#ref-8">[8]</a></sup> Wątpliwości warto omówić z lekarzem lub farmaceutą.</p>
+  </details>
+
+  <details>
+    <summary>Dlaczego ludzie w ogóle szukają mniejszych dawek?</summary>
+    <p>Najczęściej z powodu ceny i objawów żołądkowo-jelitowych, a także po to, by utrzymać masę po osiągnięciu celu.<sup><a href="#ref-8">[8]</a><a href="#ref-9">[9]</a></sup> To uzasadnione potrzeby, na które lekarz może odpowiedzieć bezpieczniej niż internet.</p>
+  </details>
+
+  <details>
+    <summary>Kiedy lek można odstawić na stałe?</summary>
+    <p>Nie ma jednej reguły. Piśmiennictwo zaleca planowanie zakończenia leczenia z lekarzem, monitorowanie masy po odstawieniu i wspólną decyzję. Nie traktuje się tego jako krótkiego kursu.<sup><a href="#ref-5">[5]</a></sup></p>
+  </details>
+</section>
+
+<section id="nowosci" class="news">
+  <h2>Nowości z piśmiennictwa</h2>
+  <p class="small">Krótkie notatki o nowych publikacjach, z datą i linkiem do źródła. Strona jest aktualizowana okresowo. Ostatnia aktualizacja: 23 listopada 2026.</p>
+
+  <!-- DODAWANIE NOWOŚCI: skopiuj blok <article>, zmień datę, tytuł, opis i link, wstaw na górze listy. -->
+
+  <article>
+    <time datetime="2026-11-13">13 listopada 2026</time>
+    <h3>Przegląd: mikrodawkowanie, dawkowanie frakcyjne i dzielone</h3>
+    <p>Infante i wsp. (Minerva Endocrinol). Praktyki te opisano jako niezatwierdzone, a dowody jako głównie anegdotyczne. <a href="https://pubmed.ncbi.nlm.nih.gov/43021748/">PubMed</a> · <a href="https://doi.org/10.23736/S2724-6507.26.04655-5">DOI</a></p>
+  </article>
+  <article>
+    <time datetime="2026-10-09">9 października 2026</time>
+    <h3>Przegląd systematyczny: nawrót masy po odstawieniu GLP-1</h3>
+    <p>Marchetti i wsp. (Metabolites). Nawrót jest częsty, a dowody dla strategii podtrzymania są skąpe. <a href="https://pubmed.ncbi.nlm.nih.gov/42941232/">PubMed</a> · <a href="https://doi.org/10.3390/metabo16100757">DOI</a></p>
+  </article>
+  <article>
+    <time datetime="2026-05-26">26 maja 2026</time>
+    <h3>Dylemat „mikrodawkowania” a bezpieczeństwo pacjenta</h3>
+    <p>Trainer (J Am Assoc Nurse Pract). Ryzyko manipulowania penem, preparatów recepturowych i dzielenia leku. <a href="https://pubmed.ncbi.nlm.nih.gov/42201545/">PubMed</a> · <a href="https://doi.org/10.1097/JXX.0000000000001296">DOI</a></p>
+  </article>
+  <article>
+    <time datetime="2026-03-04">4 marca 2026</time>
+    <h3>Jak przebiega nawrót masy po odstawieniu</h3>
+    <p>Budini i wsp. (EClinicalMedicine). Po roku wraca około 60% utraconej masy, z szacowanym plateau około 75%. <a href="https://pubmed.ncbi.nlm.nih.gov/41938838/">PubMed</a> · <a href="https://doi.org/10.1016/j.eclinm.2026.103796">DOI</a></p>
+  </article>
+  <article>
+    <time datetime="2026-02-24">24 lutego 2026</time>
+    <h3>Seria przypadków: rzadsze dawkowanie po osiągnięciu plateau</h3>
+    <p>Wong i wsp. (Obesity). 30 osób, zwykle podawanie co drugi tydzień, masa i parametry metaboliczne utrzymane. <a href="https://pubmed.ncbi.nlm.nih.gov/41732031/">PubMed</a> · <a href="https://doi.org/10.1002/oby.70137">DOI</a></p>
+  </article>
+</section>
+
+<section id="zrodla">
+  <h2>Piśmiennictwo</h2>
+  <p class="small">Według PubMed. Przy każdej pozycji podano link do abstraktu i do wersji wydawcy (DOI).</p>
+  <ol class="refs">
+    <li id="ref-1">Wilding JPH i wsp. Weight regain and cardiometabolic effects after withdrawal of semaglutide: the STEP 1 trial extension. <em>Diabetes Obes Metab</em> 2022;24(8):1553–1564. <a href="https://pubmed.ncbi.nlm.nih.gov/35441470/">PubMed</a> · <a href="https://doi.org/10.1111/dom.14725">DOI</a></li>
+    <li id="ref-2">Aronne LJ i wsp. Continued treatment with tirzepatide for maintenance of weight reduction in adults with obesity: the SURMOUNT-4 randomized clinical trial. <em>JAMA</em> 2024;331(1):38–48. <a href="https://pubmed.ncbi.nlm.nih.gov/38078870/">PubMed</a> · <a href="https://doi.org/10.1001/jama.2023.24945">DOI</a></li>
+    <li id="ref-3">Tzang CC i wsp. Metabolic rebound after GLP-1 receptor agonist discontinuation: a systematic review and meta-analysis. <em>EClinicalMedicine</em> 2025;90:103680. <a href="https://pubmed.ncbi.nlm.nih.gov/41399474/">PubMed</a> · <a href="https://doi.org/10.1016/j.eclinm.2025.103680">DOI</a></li>
+    <li id="ref-4">Budini B i wsp. Trajectory of weight regain after cessation of GLP-1 receptor agonists: a systematic review and nonlinear meta-regression. <em>EClinicalMedicine</em> 2026;93:103796. <a href="https://pubmed.ncbi.nlm.nih.gov/41938838/">PubMed</a> · <a href="https://doi.org/10.1016/j.eclinm.2026.103796">DOI</a></li>
+    <li id="ref-5">Marchetti M i wsp. Weight regain after discontinuation of GLP-1 and GIP/GLP-1 receptor agonists: a systematic review. <em>Metabolites</em> 2026;16(10). <a href="https://pubmed.ncbi.nlm.nih.gov/42941232/">PubMed</a> · <a href="https://doi.org/10.3390/metabo16100757">DOI</a></li>
+    <li id="ref-6">Wong M i wsp. Reduced-frequency GLP1 therapy maintains weight, body composition, and metabolic syndrome improvements: a case series. <em>Obesity (Silver Spring)</em> 2026;34(Suppl 1):112–120. <a href="https://pubmed.ncbi.nlm.nih.gov/41732031/">PubMed</a> · <a href="https://doi.org/10.1002/oby.70137">DOI</a></li>
+    <li id="ref-7">Infante M i wsp. Microdosing, fractional and split dosing of injectable GLP-1-based drugs: balancing potential benefits and risks. <em>Minerva Endocrinol</em> 2026 (publikacja online 13.11.2026). <a href="https://pubmed.ncbi.nlm.nih.gov/43021748/">PubMed</a> · <a href="https://doi.org/10.23736/S2724-6507.26.04655-5">DOI</a></li>
+    <li id="ref-8">Trainer N. The “microdosing” dilemma: balancing patient anecdotes with clinical safety amid GLP-1 compounding restrictions. <em>J Am Assoc Nurse Pract</em> 2026 (publikacja online 26.05.2026). <a href="https://pubmed.ncbi.nlm.nih.gov/42201545/">PubMed</a> · <a href="https://doi.org/10.1097/JXX.0000000000001296">DOI</a></li>
+    <li id="ref-9">Panlilio MA i wsp. Multisystem benefits of GLP-1 microdosing: a narrative review. <em>Cureus</em> 2026;18(7):e113635. <a href="https://pubmed.ncbi.nlm.nih.gov/42668762/">PubMed</a> · <a href="https://doi.org/10.7759/cureus.113635">DOI</a></li>
+    <li id="ref-10">Tzoulis P i wsp. A real-world study of the effectiveness and safety of semaglutide for weight loss. <em>Cureus</em> 2024;16(5):e59558. <a href="https://pubmed.ncbi.nlm.nih.gov/38826889/">PubMed</a> · <a href="https://doi.org/10.7759/cureus.59558">DOI</a></li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+  <h2>Zastrzeżenie</h2>
+  <p>Treści na tej stronie mają charakter wyłącznie informacyjny i edukacyjny. Nie stanowią porady medycznej ani zalecenia leczenia i nie zastępują konsultacji z lekarzem. Nie zmieniaj dawki, odstępów między dawkami ani nie kończ leczenia bez decyzji lekarza prowadzącego. Strona nie reklamuje żadnego produktu leczniczego.</p>
+  <h2>O autorze</h2>
+  <p>Prof. dr hab. Stanisław Dąbrowiecki, specjalista chirurg, Bydgoszcz. Autor prowadzi praktykę, w której zajmuje się m.in. leczeniem otyłości, w tym chirurgią bariatryczną (Szpital Eskulap w Osielsku; gabinet: ul. Mierosławskiego 9/3, Bydgoszcz; tel. 603 751 335; <a href="mailto:s.dabrowiecki@outlook.com">s.dabrowiecki@outlook.com</a>). Informacje o praktyce podano jako przypis i nie są częścią omówienia piśmiennictwa.</p>
+  <p>Narzędzie pomocnicze: <a href="https://tylekliknij.pl">kalkulator kliknięć wstrzykiwacza</a> (dla dawek ustalonych z lekarzem).</p>
+  <p class="small" style="color:#9fbcc0">Ostatnia aktualizacja: 23 listopada 2026. © miniglp1.pl</p>
+</div>
+</footer>
+
+</body>
+</html>
